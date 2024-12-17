@@ -29,10 +29,6 @@ const StyledFormRow = styled.div`
     display: flex;
     justify-content: flex-end;
     gap: 1.2rem;
-
-    @media (max-width: 645px) {
-      justify-content: center;
-    }
   }
 `;
 

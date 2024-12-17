@@ -100,21 +100,6 @@ async function createBookings() {
   if (error) console.log(error.message);
 }
 
-// export async function uploadAll() {
-//   // setIsLoading(true);
-//   // Bookings need to be deleted FIRST
-//   await deleteBookings();
-//   await deleteGuests();
-//   await deleteCabins();
-
-//   // Bookings need to be created LAST
-//   await createGuests();
-//   await createCabins();
-//   await createBookings();
-
-//   // setIsLoading(false);
-// }
-
 function Uploader() {
   const [isLoading, setIsLoading] = useState(false);
 
@@ -163,7 +148,7 @@ function Uploader() {
         gap: '8px',
       }}
     >
-      <h3>SAMPLE DATA</h3>
+      <h3 style={{ color: 'red' }}>SAMPLE DATA</h3>
 
       <Button onClick={handleUploadAll} disabled={isLoading}>
         Upload ALL
